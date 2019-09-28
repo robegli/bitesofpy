@@ -28,5 +28,20 @@ def slice_and_dice(text: str = text) -> list:
             results.append(i.split().pop().strip('.!'))
     return results
 
+
+# Theirs
+# def slice_and_dice(text: str = text) -> list:
+#     result = []
+#     for line in text.strip().splitlines():
+#         line = line.lstrip()
+#
+#         if line[0] not in ascii_lowercase:
+#             continue
+#
+#         words = line.split()
+#         last_word_stripped = words[-1].rstrip('!.')
+#         results.append(last_word_stripped)
+
+
 if __name__ == '__main__':
     print(slice_and_dice())
