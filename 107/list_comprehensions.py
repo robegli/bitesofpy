@@ -4,6 +4,7 @@ def filter_positive_even_numbers(numbers):
        list comprehension."""
     x = [i for i in numbers if i > 0 and (i % 2) == 0]
     return x
+    # or return [i for i in numbers if n > 0 and n % 2 == 0]
 
 
 if __name__ == '__main__':
